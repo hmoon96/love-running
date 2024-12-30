@@ -214,6 +214,25 @@ main{
         width: 300px;
         right: 50px;
     }
+
+    /*Reasons section*/
+
+    #benefits-physical, 
+    #benefits-mental{
+        display:flex;
+        flex-direction:column;
+        width: 100%;
+    }
+
+    #benefits-physical > div, 
+    #benefits-mental > div {
+        width:75%
+    }
+
+    #benefits-mental > div {
+        text-align: end;
+        align-self: flex-end;
+    }
 }
 
 
@@ -223,3 +242,11 @@ main{
         border-bottom: 1px solid #3a3a3a;
     }
 }
+
+
+    /* Larger devices (laptops and desktops, 1200 px and up*/
+@media screen and (min-width: 1200px){
+        #benefit > div {
+            display:flex;
+            justify-content: space-evenly;
+        }
